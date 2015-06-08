@@ -1,0 +1,16 @@
+
+
+  <h1>{{title}}</h1>
+  <p>Welcome to {{title}}</p>
+  <form id="urlForm" onsubmit="newProxy(); return false">
+  	<input id="pageUrl" placeholder="http://example.com">
+  	<button type="submit">GO</button>
+  </form>
+
+  <script type="text/javascript">
+  var newProxy = function() {
+  	var newPage = document.getElementById('pageUrl').value;
+  	var url = '/?page=' + newPage;
+  	window.location = url;
+  };
+  </script>
